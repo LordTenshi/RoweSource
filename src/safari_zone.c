@@ -58,8 +58,8 @@ void EnterSafariMode(void)
     FlagClear(FLAG_HIDE_SAFARI_ZONE_WORKER_WITHOUT_PASS);
     SetSafariZoneFlag();
     ClearAllPokeblockFeeders();
-    gNumSafariBalls = 30;
-    sSafariZoneStepCounter = 1000;
+    gNumSafariBalls = 99;
+    sSafariZoneStepCounter = 9999;
     sSafariZoneCaughtMons = 0;
     sSafariZonePkblkUses = 0;
 }
@@ -217,7 +217,7 @@ void SafariZoneActivatePokeblockFeeder(u8 pkblId)
             GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
             sPokeblockFeeders[i].mapNum = gSaveBlock1Ptr->location.mapNum;
             sPokeblockFeeders[i].pokeblock = gSaveBlock1Ptr->pokeblocks[pkblId];
-            sPokeblockFeeders[i].stepCounter = 100;
+            sPokeblockFeeders[i].stepCounter = 999;
             sPokeblockFeeders[i].x = x;
             sPokeblockFeeders[i].y = y;
             break;
